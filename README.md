@@ -1,3 +1,5 @@
+<img src="Media/Logo.png" width=256px />
+
 # be focus
 be focus is an iOS application that aims to cure phone addiction by playing a tree growing game. 
 
