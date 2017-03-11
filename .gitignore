@@ -45,6 +45,9 @@ playground.xcworkspace
 #
 Pods/
 
+# Firebase Plist
+./be #focused/GoogleService-Info.plist
+
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
