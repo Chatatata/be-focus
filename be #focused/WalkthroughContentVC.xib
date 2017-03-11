@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkthroughContentVC" customModule="be__focused" customModuleProvider="target">
+            <connections>
+                <outlet property="colorBackground" destination="dcF-25-foK" id="I1A-CT-rmM"/>
+                <outlet property="gotItbutton" destination="7yp-rS-QeO" id="hS2-Df-lr3"/>
+                <outlet property="pageControl" destination="EQA-zL-jtJ" id="ui0-lE-W83"/>
+                <outlet property="skipButton" destination="IwQ-MH-ChJ" id="uxs-2Y-qdm"/>
+                <outlet property="slideImage" destination="dTx-1X-0Eg" id="Bd8-Py-5wF"/>
+                <outlet property="slideLabel" destination="MSm-qU-FnR" id="VOk-qv-YXJ"/>
+                <outlet property="view" destination="VGL-dS-kHm" id="eZB-Wg-vfr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VGL-dS-kHm">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree1" translatesAutoresizingMaskIntoConstraints="NO" id="dTx-1X-0Eg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcF-25-foK">
+                    <rect key="frame" x="0.0" y="526" width="375" height="141"/>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EQA-zL-jtJ">
+                    <rect key="frame" x="142" y="622" width="92" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="TJD-NI-ZNA"/>
+                        <constraint firstAttribute="height" constant="37" id="rRe-li-fR8"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-MH-ChJ">
+                    <rect key="frame" x="16" y="624" width="30" height="34"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yp-rS-QeO">
+                    <rect key="frame" x="285" y="624" width="74" height="34"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Let's start!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSm-qU-FnR">
+                    <rect key="frame" x="28" y="526" width="319" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="tYl-ff-GJa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7yp-rS-QeO" secondAttribute="trailing" constant="16" id="2kB-12-aCa"/>
+                <constraint firstAttribute="trailing" secondItem="dcF-25-foK" secondAttribute="trailing" id="2la-ch-3zX"/>
+                <constraint firstAttribute="bottom" secondItem="dcF-25-foK" secondAttribute="bottom" id="7Ho-ml-3Sw"/>
+                <constraint firstAttribute="trailing" secondItem="MSm-qU-FnR" secondAttribute="trailing" constant="28" id="7NI-fw-ZEU"/>
+                <constraint firstItem="dcF-25-foK" firstAttribute="leading" secondItem="VGL-dS-kHm" secondAttribute="leading" id="EnI-cg-q5G"/>
+                <constraint firstItem="dcF-25-foK" firstAttribute="top" secondItem="MSm-qU-FnR" secondAttribute="top" id="MtL-ZO-8jl"/>
+                <constraint firstItem="IwQ-MH-ChJ" firstAttribute="centerY" secondItem="EQA-zL-jtJ" secondAttribute="centerY" id="STD-wI-hHe"/>
+                <constraint firstAttribute="trailing" secondItem="dTx-1X-0Eg" secondAttribute="trailing" id="Vc8-OL-RCj"/>
+                <constraint firstItem="dTx-1X-0Eg" firstAttribute="leading" secondItem="VGL-dS-kHm" secondAttribute="leading" id="ZfU-Wm-4ce"/>
+                <constraint firstItem="MSm-qU-FnR" firstAttribute="leading" secondItem="VGL-dS-kHm" secondAttribute="leading" constant="28" id="aQY-7q-fYZ"/>
+                <constraint firstItem="dTx-1X-0Eg" firstAttribute="top" secondItem="VGL-dS-kHm" secondAttribute="top" id="hG7-fE-uQq"/>
+                <constraint firstItem="7yp-rS-QeO" firstAttribute="centerY" secondItem="EQA-zL-jtJ" secondAttribute="centerY" id="hec-yi-U9w"/>
+                <constraint firstAttribute="bottom" secondItem="EQA-zL-jtJ" secondAttribute="bottom" constant="8" id="iDt-70-vgL"/>
+                <constraint firstItem="EQA-zL-jtJ" firstAttribute="centerX" secondItem="VGL-dS-kHm" secondAttribute="centerX" id="naq-aE-lW7"/>
+                <constraint firstItem="MSm-qU-FnR" firstAttribute="top" secondItem="dTx-1X-0Eg" secondAttribute="bottom" id="rGB-FO-f3T"/>
+                <constraint firstItem="IwQ-MH-ChJ" firstAttribute="leading" secondItem="VGL-dS-kHm" secondAttribute="leading" constant="16" id="zLo-YI-EHA"/>
+                <constraint firstItem="EQA-zL-jtJ" firstAttribute="top" secondItem="MSm-qU-FnR" secondAttribute="bottom" constant="6" id="zmk-h7-gzm"/>
+            </constraints>
+            <point key="canvasLocation" x="-39.5" y="63.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Tree1" width="1190" height="1684"/>
+    </resources>
+</document>
