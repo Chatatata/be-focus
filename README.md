@@ -1,5 +1,5 @@
-# be Focus
-be Focus is an iOS application for helping to focus while working.
+# be focus
+be focus is an iOS application that aims to cure phone addiction by playing a tree growing game. 
 
 # Application Description
 
